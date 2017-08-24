@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"  >
+  <channel>
+    <title>Хабрахабр / Все публикации подряд / Разработка мобильных приложений</title>
+    <link>https://habrahabr.ru/hub/mobile_dev/posts/all/</link>
+    <description><![CDATA[]]></description>
+    <language>ru</language>
+    <managingEditor>editor@habrahabr.ru</managingEditor>
+    <generator>habrahabr.ru</generator>
+    <pubDate>Thu, 24 Aug 2017 06:55:39 GMT</pubDate>
+    <lastBuildDate></lastBuildDate>
+      <image>
+        <link>https://habrahabr.ru/</link>
+        <url>https://habrahabr.ru/images/logo.png</url>
+        <title>Хабрахабр</title>
+      </image>
+
+              <item>
+      <title><![CDATA[Использование системного API в Sailfish OS]]></title>
+      <guid isPermaLink="true">https://habrahabr.ru/post/336278/</guid>
+      <link>https://habrahabr.ru/post/336278/</link>
+      <description><![CDATA[<h3>Введение</h3><br>
+Голосовые ассистенты в мобильных устройствах не стоят на месте и непрерывно развиваются. Голосовой помощник для Sailfish OS, <a href="https://habrahabr.ru/post/313680/">представленный</a> осенью прошлого года, не исключение и тоже обрастает новым функционалом.<br>
+<br>
+В той статье рассматривался базовый принцип внутренней работы приложения. Данный материал открывает серию из двух статей, в которой он будет рассмотрен подробнее:<br>
+<ol>
+<li>Работа с недокументированным API для управления устройством (текущая);</li>
+<li>Работа с интерфейсами D-Bus, предоставляемыми операционной системой.</li>
+</ol><br>
+В текущей статье описывается как управлять яркостью экрана и системной громкостью, а также как включать и выключать Bluetooth и режим полёта.<br>
+<br>
+Подразумевается, что читатель уже <a href="https://sailfishos.org/wiki/Application_SDK">установил</a> Sailfish OS SDK и <a href="https://habrahabr.ru/post/305510/">разрабатывал</a> приложения с его использованием.<br> <a href="https://habrahabr.ru/post/336278/#habracut">Читать дальше →</a>]]></description>
+      
+      <pubDate>Wed, 23 Aug 2017 20:19:12 GMT</pubDate>
+      <dc:creator>osanwe</dc:creator>
+      <category><![CDATA[Разработка под Sailfish OS]]></category><category><![CDATA[Разработка мобильных приложений]]></category><category><![CDATA[Qt]]></category>
+      <category><![CDATA[api]]></category><category><![CDATA[qml]]></category><category><![CDATA[qt]]></category><category><![CDATA[sailfish os]]></category><category><![CDATA[мобильная разработка]]></category><category><![CDATA[операционные системы]]></category>
+    </item>
+
+
+
+
+
+
+
+  
+
+    <item>
+      <title><![CDATA[[Из песочницы] Заполняем «Соглашения, налоги и банковскую информацию» в iTunes connect для русского ООО]]></title>
+      <guid isPermaLink="true">https://habrahabr.ru/post/336236/</guid>
+      <link>https://habrahabr.ru/post/336236/</link>
+      <description><![CDATA[Как разместить свое приложение в App Store, если ты юридическое лицо из России? Инструкций для ИП в Интернетах можно найти уйму. А вот если ты смелый, ловкий, умелый, услышал, как тебя джунгли зовут (каламбур из детства 90-х, если кто не понял) и с дуру оформил ООО, то трудностей на пути к покорению iTunes Connect тебе предстоит немало. Посему, решив прервать этот порочный круг поисков ответов на вопросы, как заполнить злосчастную налоговую информацию для ООО, спешу поделиться своим опытом. <br>
+<br>
+<div style="text-align:center;"><img src="https://habrastorage.org/web/3e8/929/863/3e89298632cf44d699e6cc7aee7ed18d.jpeg" alt="image"></div> <a href="https://habrahabr.ru/post/336236/#habracut">Читать дальше →</a>]]></description>
+      
+      <pubDate>Wed, 23 Aug 2017 10:41:39 GMT</pubDate>
+      <dc:creator>Traktorina</dc:creator>
+      <category><![CDATA[Разработка под iOS]]></category><category><![CDATA[Разработка мобильных приложений]]></category>
+      <category>iTunes connect</category><category>юридическое лицо</category><category>ios разработка</category>
+    </item>
+
+
+
+
+
+  
+
+
+
+    <item>
+      <title><![CDATA[[Перевод] Как стать лучшим разработчиком приложений Андроид: 31 совет]]></title>
+      <guid isPermaLink="true">https://habrahabr.ru/post/336204/</guid>
+      <link>https://habrahabr.ru/post/336204/</link>
+      <description><![CDATA[<a href="https://habrahabr.ru/company/alconost/blog/336204/"><img src="https://habrastorage.org/web/383/fc0/78a/383fc078a9904c2e839ef57b815e5d9a.jpg"></a><br>
+Стать обычным Android-разработчиком легко, а вот чтобы стать успешным и выдающимся Android-разработчиком, требуется много тяжелого труда, энтузиазма, самоотдачи и настойчивости. <br>
+<br>
+Я не могу показать вам короткий путь к успеху, но если вы готовы приложить усилия – он ждёт вас. <br>
+<br>
+Чтобы помочь вам на пути становления, я собрал несколько небольших советов, исходя из своего опыта. Если вы решили стать Android-разработчиком или уже работаете в этой области какое-то время, мои советы вам пригодятся. <br>
+<br>
+<b>Переведено в <a href="https://alconost.com?utm_source=habrahabr&amp;utm_medium=article&amp;utm_campaign=translation&amp;utm_content=android-developer-30-tips">Alconost</a></b><br> <a href="https://habrahabr.ru/post/336204/#habracut">Читать дальше →</a>]]></description>
+      
+      <pubDate>Wed, 23 Aug 2017 07:03:44 GMT</pubDate>
+      <dc:creator>alconost</dc:creator>
+      <category><![CDATA[Тестирование мобильных приложений]]></category><category><![CDATA[Разработка под Android]]></category><category><![CDATA[Разработка мобильных приложений]]></category><category><![CDATA[Проектирование и рефакторинг]]></category><category><![CDATA[Блог компании Alconost]]></category>
+      <category>программирование</category><category>Андроид</category><category>Андроид разработка</category><category>Android</category><category>Alconost</category><category>рефакторинг</category><category>советы</category><category>карьера</category>
+    </item>
+
+
+
+  
+
+
+
+    <item>
+      <title><![CDATA[[Перевод] Room: Хранение данных на Android для всех и каждого]]></title>
+      <guid isPermaLink="true">https://habrahabr.ru/post/336196/</guid>
+      <link>https://habrahabr.ru/post/336196/</link>
+      <description><![CDATA[<p><b>Room</b> — это новый способ сохранить данные приложений в Android-приложении, представленный в этом году на <i>Google I/O</i>. Это часть новой<i>Android Architecture</i>, группа библиотек от Google, которые поддерживают уместную архитектуру приложений. Room предлагается в качестве альтернативы Realm, ORMLite, GreenDao и многим другим.</p><br>
+<p><b>Room</b> — это высокоуровневый интерфейс для низкоуровневых привязок SQLite, встроенных в Android, о которых вы можете узнать больше в <a href="https://developer.android.com/training/basics/data-storage/databases.html">документации</a>. Он выполняет большую часть своей работы во время компиляции, создавая API-интерфейс поверх встроенного SQLite API, поэтому вам не нужно работать с <i>Cursor</i> или <i>ContentResolver</i>. </p> <a href="https://habrahabr.ru/post/336196/#habracut">Читать дальше →</a>]]></description>
+      
+      <pubDate>Tue, 22 Aug 2017 18:16:03 GMT</pubDate>
+      <dc:creator>velkonost</dc:creator>
+      <category><![CDATA[Разработка под Android]]></category><category><![CDATA[Разработка мобильных приложений]]></category><category><![CDATA[Java]]></category>
+      <category>android</category><category>room</category>
+    </item>
+
+
+
+  
+
+
+
+    <item>
+      <title><![CDATA[[Перевод] Реализация списка с заголовком, футером и пагинацией в Андроид]]></title>
+      <guid isPermaLink="true">https://habrahabr.ru/post/336184/</guid>
+      <link>https://habrahabr.ru/post/336184/</link>
+      <description><![CDATA[<p><img src="https://habrastorage.org/getpro/habr/post_images/a06/f8d/1da/a06f8d1dae76fdb9dd6b18c1f6bcf271.jpg" alt="image"></p> <a href="https://habrahabr.ru/post/336184/#habracut">Читать дальше →</a>]]></description>
+      
+      <pubDate>Tue, 22 Aug 2017 15:56:08 GMT</pubDate>
+      <dc:creator>velkonost</dc:creator>
+      <category><![CDATA[Разработка под Android]]></category><category><![CDATA[Разработка мобильных приложений]]></category><category><![CDATA[Java]]></category>
+      <category>android</category><category>java</category><category>андроид</category>
+    </item>
+
+
+
+      <item>
+      <title><![CDATA[Планирование задач в Андроид]]></title>
+      <guid isPermaLink="true">https://habrahabr.ru/post/336120/</guid>
+      <link>https://habrahabr.ru/post/336120/</link>
+      <description><![CDATA[<p>Привет Хабр! Предлагаю вашему вниманию свободный перевод статьи «<a href="https://android.jlelse.eu/schedule-tasks-and-jobs-intelligently-in-android-e0b0d9201777">Schedule tasks and jobs intelligently in Android</a>» от Ankit Sinhal.</p><br>
+<p>В современной разработке приложений очень часто выполняются задачи асинхронно, и их объем выходит за пределы жизненного цикла приложения. В некоторых ситуациях мы также должны выполнять некоторые работы, но это не обязательно делать прямо сейчас. Чтобы запланировать фоновые работы, Android представила несколько API, которые мы можем грамотно использовать в наших приложениях.</p> <a href="https://habrahabr.ru/post/336120/#habracut">Читать дальше →</a>]]></description>
+      
+      <pubDate>Tue, 22 Aug 2017 15:23:04 GMT</pubDate>
+      <dc:creator>velkonost</dc:creator>
+      <category><![CDATA[Разработка под Android]]></category><category><![CDATA[Разработка мобильных приложений]]></category><category><![CDATA[Java]]></category><category><![CDATA[API]]></category>
+      <category><![CDATA[android]]></category><category><![CDATA[java]]></category>
+    </item>
+
+
+
+
+
+
+
+      <item>
+      <title><![CDATA[Concurrency в Swift 3 и 4. Operation и OperationQueue]]></title>
+      <guid isPermaLink="true">https://habrahabr.ru/post/335756/</guid>
+      <link>https://habrahabr.ru/post/335756/</link>
+      <description><![CDATA[<img src="https://habrastorage.org/web/592/ed8/a45/592ed8a459394f11b7e26add358101b0.png"><br>
+<img src="https://habrastorage.org/web/67d/c94/62c/67dc9462c57f489290054ec4013c3b1d.png"><br>
+<br>
+Если вы хотите добиться <code>UI</code> отзывчивости вашего<code> iOS</code> приложения, выполняя такие затратные по времени куски кода, как загрузка данных из сети или обработка изображений, то вам нужно использовать продвинутые паттерны, связанные с многопоточностью (<code>сoncurrency</code>), иначе работа вашего пользовательского интерфейса (<code>U</code>I) начнет сильно замедляться и даже может привести к полной его «заморозке». Вам нужно убрать ресурсо-затратные задачи с <code>main thread</code> (главного потока), который отвечает за выполнение кода, отображающего ваш пользовательский интерфейс (<code>UI</code>). <br>
+<br>
+В текущей версии <code>Swift 3 </code>и ближайшей<code> Swift 4</code> (осень 2017) это можно сделать двумя способами, которые пока не связаны с встроенными языковыми конструкциями <code>Swift</code>, начало реализации которых будет только в <code><a href="https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20170807/038645.html?utm_campaign=This%2BWeek%2Bin%2BSwift&amp;utm_medium=web&amp;utm_source=This_Week_in_Swift_141">Swift 5</a></code> (конец 2018).<br>
+<br>
+Один из них использует <code>GCD (Grand Central Dispatch)</code> и ему посвящена <a href="https://habrahabr.ru/post/320152/"> предыдущая статья</a>. В этой статье мы покажем, как достичь отзывчивости <code>UI</code> в <code>iOS</code> приложениях с помощью таких абстрактных понятий, как операция<code><font color="#0000FF"> Operation</font></code> и очередь операций <code><font color="#0000FF"> OperationQueue</font></code>. Мы также покажем в чем различие этих двух подходов и какой из них в каких ситуациях лучше использовать.<br>
+<br>
+Код для этой статьи можно посмотреть на <a href="https://github.com/BestKora/Operation_OperatioQueue">Github</a>.<br> <a href="https://habrahabr.ru/post/335756/#habracut">Читать дальше →</a>]]></description>
+      
+      <pubDate>Mon, 21 Aug 2017 12:27:31 GMT</pubDate>
+      <dc:creator>WildGreyPlus</dc:creator>
+      <category><![CDATA[Разработка под iOS]]></category><category><![CDATA[Разработка мобильных приложений]]></category><category><![CDATA[Программирование]]></category><category><![CDATA[Swift]]></category>
+      <category><![CDATA[concurrency]]></category><category><![CDATA[ios разработка]]></category><category><![CDATA[swift  разработка]]></category><category><![CDATA[класс Operation]]></category><category><![CDATA[OperationQueue]]></category><category><![CDATA[AsyncOperation]]></category><category><![CDATA[dependencies]]></category><category><![CDATA[cancellation Operation]]></category>
+    </item>
+
+
+
+
+
+
+
+      <item>
+      <title><![CDATA[Retrofit на Android с Kotlin]]></title>
+      <guid isPermaLink="true">https://habrahabr.ru/post/336034/</guid>
+      <link>https://habrahabr.ru/post/336034/</link>
+      <description><![CDATA[<p><img src="https://habrastorage.org/getpro/habr/post_images/91f/4d1/9b9/91f4d19b9a5f1ee830be94653c63cb23.jpg" alt="image"></p><br>
+<p>Одним из самых захватывающих объявлений на Google I/O в этом году стала официальная поддержка Kotlin для разработки под Android.</p><br>
+<p>Котлин на самом деле не новый язык, ему уже &gt;5 лет и он довольно зрелый. <a href="https://developer.android.com/kotlin/index.html">Здесь</a> вы можете получить более подробную информацию о языке</p><br>
+<p>Я планирую поделиться некоторыми «практиками» использования Kotlin в разработке Android.</p> <a href="https://habrahabr.ru/post/336034/#habracut">Читать дальше →</a>]]></description>
+      
+      <pubDate>Mon, 21 Aug 2017 08:08:31 GMT</pubDate>
+      <dc:creator>velkonost</dc:creator>
+      <category><![CDATA[Разработка под Android]]></category><category><![CDATA[Разработка мобильных приложений]]></category><category><![CDATA[Kotlin]]></category><category><![CDATA[Java]]></category>
+      <category><![CDATA[retrofit]]></category><category><![CDATA[android]]></category><category><![CDATA[kotlin]]></category><category><![CDATA[rxjava]]></category>
+    </item>
+
+
+
+
+
+
+
+  
+
+
+
+    <item>
+      <title><![CDATA[[Перевод] 30+ инструментов для профессиональной разработки приложений под Android]]></title>
+      <guid isPermaLink="true">https://habrahabr.ru/post/336020/</guid>
+      <link>https://habrahabr.ru/post/336020/</link>
+      <description><![CDATA[<img src="https://habrastorage.org/getpro/habr/post_images/21c/88e/c1a/21c88ec1acd00e8ce1a841f750194d81.jpg" alt="image"><br>
+<br>
+В этой статье я собираюсь поделиться некоторыми из лучших инструментов для повышения производительности разработки и создания лучших приложений под Android. Я лично использовал эти инструменты уже довольно давно и нашел их действительно полезными.<br>
+<br>
+Эти инструменты помогли мне сэкономить много драгоценного времени из моей повседневной жизни, а также помогли мне создавать более качественные приложения. Поэтому, не теряя времени, давайте познакомимся с новыми и потрясающими инструментами для профессиональной разработки приложений под Android.<br> <a href="https://habrahabr.ru/post/336020/#habracut">Читать дальше →</a>]]></description>
+      
+      <pubDate>Mon, 21 Aug 2017 06:19:18 GMT</pubDate>
+      <dc:creator>velkonost</dc:creator>
+      <category><![CDATA[Совершенный код]]></category><category><![CDATA[Разработка под Android]]></category><category><![CDATA[Разработка мобильных приложений]]></category><category><![CDATA[Программирование]]></category><category><![CDATA[Java]]></category>
+      <category>android</category><category>android development</category><category>tools</category><category>toolkit</category>
+    </item>
+
+
+
+      <item>
+      <title><![CDATA[Изучаем App Shortcuts в Android Nougat 7.1]]></title>
+      <guid isPermaLink="true">https://habrahabr.ru/post/335480/</guid>
+      <link>https://habrahabr.ru/post/335480/</link>
+      <description><![CDATA[<p><img src="https://habrastorage.org/getpro/habr/post_images/d4a/482/f61/d4a482f61a4382dad7b581a14e7d6510.png" alt="image"></p><br>
+<p>Привет Хабр! Предлагаю вашему вниманию свободный перевод статьи «<a href="https://www.novoda.com/blog/exploring-android-nougat-7-1-app-shortcuts/">Exploring Android Nougat 7.1 App Shortcuts</a>» от <a href="https://www.novoda.com/blog/author/andrei-catinean/">Andrei Catinean</a>.</p><br>
+<p>Google выпустил Android Nougat с версией 7.1 (API 25). Появились некоторые интересные функции под капотом. Одна из этих дополнительных функций — app shortcuts. Эта статья расскажет, что они собой представляют, как они работают, и как вы можете их реализовать.</p> <a href="https://habrahabr.ru/post/335480/#habracut">Читать дальше →</a>]]></description>
+      
+      <pubDate>Sun, 20 Aug 2017 17:40:22 GMT</pubDate>
+      <dc:creator>velkonost</dc:creator>
+      <category><![CDATA[Разработка под Android]]></category><category><![CDATA[Разработка мобильных приложений]]></category><category><![CDATA[Java]]></category>
+      <category><![CDATA[android]]></category><category><![CDATA[nougat]]></category><category><![CDATA[android development]]></category>
+    </item>
+
+
+
+
+
+
+
+
+
+
+
+  </channel>
+</rss>
