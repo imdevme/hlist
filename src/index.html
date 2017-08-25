@@ -23,6 +23,7 @@
 	<div class="item list-group-item" >
 		<div class="title">
 			<a href="" class="title__link" target="_blank"></a>
+			<span class="date-pub"></span>
 		</div>
 	</div>
 </script>
@@ -35,11 +36,6 @@
 
 
 <script>
-
-var list = [
-	{title: 'Как Яндекс научил искусственный интеллект понимать смысл документов', url: 'https://habrahabr.ru/company/yandex/blog/336094/'},
-	{title: '«Магическая константа» 0x5f3759df', url: 'https://habrahabr.ru/company/infopulse/blog/336110/'},	
-];
 
 $(function(){
 
@@ -60,10 +56,16 @@ $(function(){
 		
 			$item = $itemTemplate.clone();
 
+			var pubDate = new Date(item.pubDate);
+			var formatedDate = pubDate.getDate() + '-' + pubDate.getMonth() + '-' +pubDate.getFullYear();
+
 			$item
 				.find('.title__link')
-				.attr('href', item.url)
+				.attr('href', item.link)
 				.html(item.title);
+			$item
+				.find('.date-pub')
+				.html(formatedDate);	
 
 			$item.appendTo($groupList);
 

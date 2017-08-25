@@ -12,7 +12,13 @@ requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 listHub = [
     'programming',
-    'mobile_dev'
+    'funcprog',
+    'oop',
+    'complete_code',
+    'refactoring',
+    'webdev',
+    'api',
+    'hi'
 ]
 
 rssUrl = "https://habrahabr.ru/rss/hub"
