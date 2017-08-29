@@ -1,0 +1,9 @@
+version: '3'
+services:
+    mongo:
+        build: ./
+        container_name: "dev-mongo"
+        volumes:
+            - ./data/mongo:/data/db
+        ports:
+            - 27017:27017 

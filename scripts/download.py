@@ -18,27 +18,42 @@ listHub = [
     'refactoring',
     'webdev',
     'api',
-    'hi'
+    'hi',
+    'javascript',
+    'mongodb',
 ]
 
+jsFileSave = 'json_file.js'
 rssUrl = "https://habrahabr.ru/rss/hub"
 
 xml_content = ''
 
-file = open('json_file.js', 'w')
+file = open(jsFileSave, 'w')
 file.write(';var json_file = (function(){ return [')
 
-if(file):
+filter_query = input("Выбрать: Лучшее (/best) Лучшее за все время (best/alltime) или по умолчанию свежие: ")
+
+if (filter_query == ''): 
+   filter_query = '/'
+
+if (file):
+
+    result = True
 
     for hubName in listHub:
 
         json_block = ' { "name" : "' + hubName + '", "data" : '
 
-        fullUrl = rssUrl + '/' + hubName + '/best/alltime/'
+        fullUrl = rssUrl + '/' + hubName + '' + filter_query
 
-        response = requests.get(fullUrl, verify=False)
+        print('Получаем ' + fullUrl);
 
-        print('Забираем: ' + fullUrl)
+        try:
+            response = requests.get(fullUrl, verify=False)
+        except Exception:
+            print('Не удалось получить...')
+            result = False
+            break
 
         if (response.status_code == 200):
             xml_content = response.text
@@ -50,11 +65,18 @@ if(file):
                 print('Пишем в файл...')
 
     time.sleep(2)
-
+    
 
 file.write(']; })();')
 file.close()
 
-shutil.move('json_file.js', '../src/json_file.js')
+print('Записали в файл ' + jsFileSave)
+
+if (result):
+    shutil.move('json_file.js', '../frontend/src/json_file.js')
+    print('Переносим файл в ../src/' + jsFileSave)
+else:
+    print('При получении данных возникли проблемы...');
+
 
 #print(';var json_file = (function(){ return ' + json_content + ';})();')
