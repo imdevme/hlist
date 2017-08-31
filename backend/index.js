@@ -44,6 +44,7 @@ MongoClient.connect(urlMongo, function(error, db){
 var app = express();
 
 app.use(express.static('frontend/src'));
+app.use(express.static('data/json'));
 
 app.get('/api/v1/articles', function(request, response){
     mongo.db.collection('articles').find({}).toArray(function(error, articles){
