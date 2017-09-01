@@ -1,60 +1,56 @@
 var assert = require('assert');
 var express = require('express');
-
-var mongo = {
-    db : null
-};
-
-var MongoClient = require('mongodb').MongoClient;
+var mongoose = require('mongoose');
+var bodyParser = require('body-parser');
 
 var urlMongo = 'mongodb://localhost:27017/test';
 
+mongoose.connect(urlMongo);
 
-MongoClient.connect(urlMongo, function(error, db){
-    assert.equal(null, error);
-    console.log('Connected successfully to mongo');
-    mongo.db = db;
+var articleSchema = mongoose.Schema({
+    title : String,
+    link  : String,
+    datePublish : Date,
+    rating : Number
+
 });
 
-// function insertDocs(db, callback) {
-    
-//     var collection = db.collection('documents');
-
-//     collection.insertMany([
-//         {a : 1},
-//         {a : 2}
-//     ], function (error, result) {
-//         callback (result);
-//     });
-
-// }
-
-// function findDocs(db, callback) {
-
-//     var collection = db.collection('documents');
-
-//     collection.find({}).toArray(function(error, docs){
-//         console.log(docs);
-//         callback(docs);
-//     });
-
-// }
-
+var Article = mongoose.model('Article', articleSchema);
 
 var app = express();
 
+app.use( bodyParser.json() );
 app.use(express.static('frontend/src'));
 app.use(express.static('data/json'));
 
 app.get('/api/v1/articles', function(request, response){
-    mongo.db.collection('articles').find({}).toArray(function(error, articles){
+
+    Article.find({}, function(error, articles){
         if (error) {
             response.status(500).send(error);
         } else {
             response.json({articles: articles});
         }
     });
+
 });
+
+app.post('/api/v1/articles', function(request, response) {
+
+    var article = new Article({
+        title : request.body.title,
+        link  : request.body.link,
+        datePublish : request.body.datePublish,
+        rating : request.body.rating
+    });
+
+    article.save().then(function(e){
+        console.log(e);
+        response.json({isSuccess: true});
+    });
+
+});
+
 
 const port = 3500;
 
